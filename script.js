@@ -9,9 +9,6 @@ function Book(title, author, read) {
     }
 }
 
-
-
-
 function addBookToLibrary(book) {
     const table = document.getElementById("table-container");
     
@@ -56,18 +53,12 @@ function addBookToLibrary(book) {
    
     
     myLibrary.push(book);  
-     
-    
+
 }
 
-const theHobbit = new Book("The Hobbit", "JRR Tolkein", "Not Read");
-const harryPotter = new Book("Harry Potter", "JK Rowling", "Reading");
-
-addBookToLibrary(theHobbit);
-addBookToLibrary(harryPotter);
-
-
-
+function removeBookFromStorage(book){
+    localStorage.removeItem(JSON.stringify(book));
+}
 
 const form = document.getElementById("form");
 
@@ -108,6 +99,8 @@ function deleteButtonListener(button){
         statusButton.remove();
         author.remove();
         title.remove();
+        removeBookFromStorage(author.textContent);
+
     })
 }
 
