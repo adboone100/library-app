@@ -11,56 +11,46 @@
 <h1 class="header">My Book Library</h1>
 
 <div class="descript">This is a project for The Odin Project in which I have to make a library using <em>Object Constructors</em> and <em>LocalStorage</em>.
-    You can also view the <a href="https://github.com/adboone100/library-app">Github repository</a> of this project.</div>
+    You can also view the <a href="https://github.com/adboone100/library-app">Github repository</a> of this project.
+</div>
 
+
+<div class="input-container">
 <div class="input">Book</div>
 <div class="input">Author</div>
 <div class="input">Status</div>
+
 <div class="input">
-    <form>
-        <input type="text" id="book" name="book">
-    </form>
+    <form id="form">
+        <input type="text" id="book-text" name="book" data-type="book">
 </div>
 <div class="input">
-    <form>
-        <input type="text" id="author" name="author">
-    </form>
+        <input type="text" id="author-text" name="author" data-type="author">
+    
 </div>
 <div class="input">
-    <form>
-        <select name="status" id="status">
-            <option value="read">Read</option>
-            <option value="not-read">Not Read</option>
-            <option value="currently-reading">Currently Reading</option>
+        <select name="status" id="status-input">
+            <option value="Read">Read</option>
+            <option value="Reading">Reading</option>
+            <option value="Not Read">Not Read</option>
         </select>
-    </form>
+    
 </div>
 <div class="input">
-    <input type="submit" value="Submit">
+        <input type="submit" id="submit-btn" value="Submit">
+</form>
+</div>
 </div>
 
-
+<div class="table-container" id="table-container">
 <div class="table">Name</div>
 <div class="table">Author</div>
 <div class="table">Status</div>
-<div class="table">
-    The Lord of the Rings
-</div>
-<div class="table">
-    JRR Tolkein
-</div>
-<div class="table">
-    Read
-</div>
-<div class="table">
-    Delete
+<div class="table"></div>
+
 </div>
 
-
-
-
-
-<script src="script.js">
+<script src="script.js"></script>
 </script>
 
 </body>

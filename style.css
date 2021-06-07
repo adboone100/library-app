@@ -1,0 +1,123 @@
+body {
+    font-family:Garamond, sans-serif;
+    padding: 0px 100px 20px 25px;
+}
+
+.header {
+    font-size: 4em;
+    font-weight: normal;
+}
+
+.descript{
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+.input-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    padding: 20px 0px 20px 0px;
+    grid-row-gap: 5px;
+    grid-column-gap: 45px;
+    
+}
+
+.input{
+    align-self: flex-end;
+}
+
+.table-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-row-gap: 5px;
+}
+
+.table{
+    border-bottom: black solid thin;
+    align-self: flex-end;
+    padding: 1px 0px 1px 0px;
+}
+
+
+.read-btn{
+    background-color: lightgreen;
+    border: solid thin;
+    border-radius: 20px;
+    font-family:Garamond, sans-serif;
+    width: 80px;
+}
+
+.read-btn:hover{
+    opacity: .3;
+    cursor: pointer;
+}
+
+.delete-btn{
+    background-color: rgb(243, 114, 114);
+    border: solid thin;
+    border-radius: 20px;
+    font-family:Garamond, sans-serif;
+    width: 80px;
+}
+
+.delete-btn:hover{
+    opacity: .3;
+    cursor: pointer;
+}
+
+.progress-btn{
+    background-color: rgb(137, 174, 253);
+    border: solid thin;
+    border-radius: 20px;
+    font-family:Garamond, sans-serif;
+    width: 80px;
+
+}
+
+.progress-btn:hover{
+    opacity: .3;
+    cursor: pointer;
+}
+
+.unread-btn{
+    background-color: rgb(255, 255, 206);
+    border: solid;
+    border-radius: 20px;
+    font-family:Garamond, sans-serif;
+    width: 80px;
+}
+
+.unread-btn:hover{
+    opacity: .3;
+    cursor: pointer;
+}
+
+#submit-btn{
+    background-color: rgb(255, 196, 68);
+    border: solid thin black;
+    border-radius: 20px;
+    font-family:Garamond, sans-serif;
+    width: 75px;
+    height: 30px
+
+}
+
+#submit-btn:hover{
+    opacity: .3;
+    cursor: pointer;
+}
+
+#book-text{
+    width:250px;
+    font-family:Garamond, sans-serif;
+}
+#author-text{
+    width:250px;
+    font-family:Garamond, sans-serif;
+}
+
+#status-input{
+    font-family:Garamond, sans-serif;
+}
